@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bilibili.brouter.example.lib1">
+
+    <application>
+        <activity android:name=".Lib1Activity1" />
+        <activity android:name=".test.Test1Activity" />
+        <activity android:name=".test.Test2Activity" />
+    </application>
+</manifest>

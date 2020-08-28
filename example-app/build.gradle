@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-kapt'
+
+import com.bilibili.brouter.buildsrc.ProjectsKt
+apply plugin: 'com.bilibili.brouter'
+
+android {
+    defaultConfig {
+        applicationId "com.bilibili.brouter.example"
+        ndk {
+            abiFilters("x86", "armeabi-v7a", "arm64-v8a")
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$KOTLIN_VERSION"
+
+    implementation ProjectsKt.getBrouterCore(project)
+    kapt ProjectsKt.getBrouterApt(project)
+
+    implementation project(":example-java-lib1")
+    runtimeOnly project(":example-kotlin-lib2")
+    implementation project(":example-custom-extensions")
+
+    compileOnly project(":example-custom-apt")
+    kapt project(":example-custom-apt")
+}
+
+brouter {
+    exportedActivityClass("com.bilibili.brouter.example.EntranceActivity")
+}

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/tv_click1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Activity1" />
+
+        <Button
+            android:id="@+id/tv_click2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Activity2回退到Activity1" />
+
+        <Button
+            android:id="@+id/tv_click20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Activity3 50% 概率重定向到 Activity1" />
+
+        <Button
+            android:id="@+id/tv_click21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Activity4 50% 概率目标类会被替换成 Activity5" />
+
+        <Button
+            android:id="@+id/tv_click22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Activity6 示例占位符捕获" />
+
+        <Button
+            android:id="@+id/tv_click23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Activity7 示例自定义Launcher" />
+
+        <Button
+            android:id="@+id/tv_click24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Activity8，根据特性选择路由" />
+
+        <Button
+            android:id="@+id/tv_click3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Fragment1" />
+
+        <Button
+            android:id="@+id/tv_click4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转Fragment2（需要登录）回退到Fragment1" />
+
+        <Button
+            android:id="@+id/tv_click5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转青少年模式页" />
+
+        <Button
+            android:id="@+id/tv_click6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转TestModule下的页面，如果打开青少年模式会被重定向" />
+
+        <Button
+            android:id="@+id/tv_click7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转 https://dieyidezui.com 原生页" />
+
+        <Button
+            android:id="@+id/tv_click8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转 https://dieyidezui.com WEB页" />
+
+        <Button
+            android:id="@+id/tv_click9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转 balck://xxx（会被拦截）" />
+
+        <Button
+            android:id="@+id/tv_click30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转 zhihu://search 回退到 Activity1" />
+
+        <Button
+            android:id="@+id/tv_click31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击跳转 bilibili://video/BV1tC4y1H7yz 回退到 Activity3( 50% 概率重定向到 Activity1)" />
+
+        <Button
+            android:id="@+id/tv_click32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击打开 Dialog" />
+
+        <Button
+            android:id="@+id/tv_click33"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="点击打开 Pager 容器" />
+
+    </LinearLayout>
+</ScrollView>

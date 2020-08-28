@@ -1,0 +1,21 @@
+import com.bilibili.brouter.buildsrc.ProjectsKt
+
+apply plugin: 'com.android.library'
+apply plugin: 'com.bilibili.brouter'
+android {
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$KOTLIN_VERSION"
+    implementation project(":example-custom-extensions")
+    implementation project(":example-kotlin-lib2")
+
+    implementation ProjectsKt.getBrouterApi(project)
+    annotationProcessor ProjectsKt.getBrouterApt(project)
+}
