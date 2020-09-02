@@ -63,7 +63,6 @@ apply plugin: 'com.bilibili.brouter'
 或
 
 ```
-// 插件审核中，暂时不支持该用法
 plugins {
   id "com.bilibili.brouter" version brouter_version
 }
