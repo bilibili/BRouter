@@ -18,6 +18,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$KOTLIN_VERSION"
 
-    implementation ProjectsKt.getBrouterApi(project)
+    api ProjectsKt.getBrouterCore(project)
     kapt ProjectsKt.getBrouterApt(project)
 }
